@@ -121,6 +121,7 @@ tblcols3=[{'name': 'Count', 'id': 'orderCount'},
 # Launch App_____________________________________________________
 app = dash.Dash()
 auth = dash_auth.BasicAuth(app,USERNAME_PASSWORD_PAIRS)
+app.server
 
 # App Layout_____________________________________________________
 app.layout = html.Div([
